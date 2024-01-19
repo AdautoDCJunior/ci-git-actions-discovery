@@ -16,6 +16,13 @@ jobs:
 
     runs-on: ${{ matrix.os }}
 
+    env:
+      HOST: localhost
+      PORT: 5432
+      USER: root
+      PASSWORD: root
+      DBNAME: root
+
     steps:
     - uses: actions/checkout@v3
 
